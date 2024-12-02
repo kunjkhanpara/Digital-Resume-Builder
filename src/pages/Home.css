@@ -1,0 +1,98 @@
+/* Global reset for body and margin */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8; /* Soft light blue-gray */
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../assets/images/image11.jpg'); /* Use relative path */
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  flex-direction: column;
+}
+
+
+/* Welcome message styling */
+.welcome-message {
+  max-width: 700px;
+  width: 100%;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  border-radius: 12px; /* Smooth rounded corners */
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15); /* Professional shadow */
+  text-align: center; /* Center-align text */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Subtle hover animation */
+}
+
+.welcome-message:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.welcome-message h1 {
+  font-size: 2.5rem; /* Larger title font size */
+  font-weight: 700; /* Bold font for a professional look */
+  color: #2c3e50; /* Dark gray */
+  margin-bottom: 20px;
+}
+
+.welcome-message p {
+  font-size: 1.2rem; /* Larger paragraph font size */
+  color: #7f8c8d; /* Soft gray */
+  line-height: 1.8; /* Improved line spacing for readability */
+  margin-bottom: 30px;
+}
+
+/* Call-to-action button styling */
+.cta-button {
+  padding: 15px 40px; /* Larger button size */
+  font-size: 1.2rem; /* Slightly larger font size */
+  font-weight: 700; /* Bold text */
+  color: #ffffff; /* White text */
+  background-color: #3498db; /* Professional blue */
+  border: none;
+  border-radius: 8px; /* Rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.cta-button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .welcome-message h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-message p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-message {
+    padding: 30px;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 12px 30px;
+  }
+}

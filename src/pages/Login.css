@@ -1,0 +1,86 @@
+/* Container for the entire login page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../assets/images/k1.jpg'); /* Background image */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Card container for login */
+.login-card {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for better readability */
+  padding: 40px 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Heading style */
+.login-card h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Description under heading */
+.login-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Input fields for manual login */
+.login-input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  box-sizing: border-box;
+}
+
+/* Login button */
+.button-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4285f4;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
+}
+
+.button-primary:hover {
+  background-color: #357ae8;
+}
+
+/* Google logo inside the button */
+.google-logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%; /* Optional: circular logo styling */
+  background-color: white; /* Ensures logo visibility */
+  padding: 2px; /* Adds slight padding for visibility */
+}
+
+/* Error text styling */
+.error-text {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
