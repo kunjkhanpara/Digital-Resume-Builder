@@ -2,6 +2,7 @@
   "name": "resume-builder",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kunjkhanpara.github.io/resume-builder",
   "dependencies": {
     "@mui/icons-material": "^6.1.6",
     "@mui/material": "^6.1.6",
@@ -25,10 +26,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "node server.js",
-    "client": "react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
