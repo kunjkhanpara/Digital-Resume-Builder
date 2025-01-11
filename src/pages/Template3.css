@@ -1,0 +1,176 @@
+.template3-container {
+  font-family: 'Arial', sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.template3-layout {
+  display: flex;
+  flex-direction: row;
+  min-height: 1122px; /* Set height to fit A4 size */
+  width: 794px; /* Set width to fit A4 size */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.left-panel {
+  width: 30%;
+  padding-right: 20px;
+  border-right: 2px solid #007bff;
+  background-color: #f0f8ff;
+  padding: 20px;
+}
+
+.right-panel {
+  width: 70%;
+  padding-left: 20px;
+}
+
+.resume-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: block;
+  border: 3px solid #007bff;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #007bff;
+  text-align: left;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+  color: #555;
+}
+
+p {
+  color: #555;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.controls {
+  margin-top: 30px;
+  text-align: center;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="file"] {
+  margin-bottom: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Education Section Table */
+.education-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.education-section table th,
+.education-section table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.education-section table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.education-section table td {
+  color: #333;
+}
+
+/* Print-specific adjustments for A4 size */
+@media print {
+  .template3-container {
+    width: 794px; /* A4 width in pixels */
+    height: 1122px; /* A4 height in pixels */
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .template3-layout {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .left-panel,
+  .right-panel {
+    width: 100%;
+    padding: 0;
+  }
+
+  .resume-photo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .template3-layout {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #007bff;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .right-panel {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .resume-photo {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -1,0 +1,131 @@
+.template-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.input-section {
+  width: 100%;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.input-section h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.input-group textarea {
+  resize: none;
+}
+
+.preview-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preview-section {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.preview-section .header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.preview-section .header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #1a73e8; /* Blue color for the name */
+}
+
+.preview-section .header p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.preview-section .header p span.phone {
+  color: #d9534f; /* Red for phone number */
+  font-weight: bold;
+}
+
+.preview-section .header p span.email {
+  color: #5bc0de; /* Cyan for email */
+  font-weight: bold;
+}
+
+.preview-section .header p span.address {
+  color: #5cb85c; /* Green for address */
+  font-weight: bold;
+}
+
+.preview-section .header p a {
+  color: #007bff; /* Blue for GitHub/LinkedIn links */
+  text-decoration: none;
+}
+
+.preview-section .header p a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  font-size: 18px;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 10px;
+  color: #444; /* Darker gray for section headings */
+}
+
+.download-button-container {
+  margin-top: 20px;
+}
+
+.download-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}

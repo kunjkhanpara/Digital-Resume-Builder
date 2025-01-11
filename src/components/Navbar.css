@@ -1,0 +1,81 @@
+/* src/components/Navbar.css */
+
+/* General navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3498db; /* Professional blue color */
+    padding: 8px 20px; /* Reduced padding to make navbar smaller */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    width: 100%;
+  }
+  
+  /* Navbar links */
+  .navbar-links {
+    display: flex;
+    gap: 15px; /* Reduced gap between links */
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem; /* Slightly smaller font size */
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #ecf0f1; /* Light hover effect */
+  }
+  
+  /* Profile photo section */
+  .navbar-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Smaller gap between profile photo and links */
+    padding: 5px 10px; /* Smaller padding around profile */
+  }
+  
+  /* Profile photo styling - MAKE SURE IT'S ROUND */
+  .profile-photo {
+    width: 30px; /* Smaller size */
+    height: 30px; /* Smaller size */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Ensures the image fits inside the circle */
+    cursor: pointer;
+  }
+  
+  /* Profile dropdown */
+  .profile-dropdown {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 180px; /* Limit dropdown width */
+  }
+  
+  .profile-dropdown p {
+    margin: 5px 0;
+    font-size: 0.9rem; /* Slightly smaller font for profile info */
+    color: #333;
+  }
+  
+  .profile-dropdown button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem; /* Smaller font for button */
+  }
+  
+  .profile-dropdown button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  
